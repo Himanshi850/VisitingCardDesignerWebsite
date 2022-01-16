@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Card Designer</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="heading">Design your <span> Visiting Card </span></h1>
+
+    <div class="main">
+        <div class="card">
+            <div class="logo">
+            </div>
+            <input type="text" class="name" maxlength="30" placeholder="business name">
+            <input type="text" class="slogan" maxlength="50" placeholder="business slogan">
+            <input type="text" class="website-link" placeholder="website">
+            <input type="text" class="email" placeholder="email">
+
+        </div>
+
+        <!--settings-->
+        <div class="setting">
+            <input type="file" accept="*image" id="upload" hidden>
+            <label for="upload" class="btn upload">upload logo</label>
+
+            <div class="backgrounds">
+                <img src="/imgs/pic2.jpg" class="active" alt="">
+                <img src="/imgs/pic3.jpg">
+                <img src="/imgs/pic4.jpg">
+                <img src="/imgs/pic5.jpg">
+                <img src="/imgs/pic6.jpg">
+                <img src="/imgs/pic7.jpg">
+
+            </div>
+            <a href="#" id="link" download="visiting card.png"></a>
+            <button class="btn download-btn">download button</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"
+        integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
